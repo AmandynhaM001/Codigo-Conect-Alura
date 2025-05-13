@@ -1,0 +1,56 @@
+:root {
+  --background-color: #00090E;
+  --text-color: #E1E1E1;
+  --primary-color: #81FE88;
+  --secondary-color: #888888;
+  --tag-color: #171D1F;
+  --font-family: "Prompt", sans-serif;
+  --items-background: #171D1F;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+background-color: var(--background-color);
+color: var(--text-color);
+font-family: var(--font-family);
+
+display: flex;
+justify-content: center;
+align-items: start;
+
+height: 100vh; /*100% a tela do usuário*/
+gap: 27px;
+padding: 56px 0;
+}
+
+aside {
+background-color: var(--items-background);
+border-radius: 10px; /*redondar a borda*/
+height: 100%; /*para ocupar % do espaço dentro*/
+padding: 40px 16px ;/*define espaçamento interno, px em cima e embaixo, px nas laterais*/
+text-align: center; /*definir o alinhamento horizontal do texto dentro de um elemento de bloco*/
+}
+
+.lista-links {
+display: flex;
+flex-direction: column;
+gap: 40px;
+margin-top: 80px;
+align-items: center;
+list-style-type: none; /*sem decoração - remover os marcadores padrão  */
+}
+
+.lista-links li a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none; 
+    color: var(--secondary-color);
+    font-size: 22px;
+}
